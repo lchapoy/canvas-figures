@@ -12,7 +12,7 @@ function Figure(){
 		}
 	}
 	var lastButtonColor=lastButton.style.border;
-	lastButton.style.border="3px solid gold";
+	lastButton.style.border="3px solid silver";
 	var container=document.getElementsByClassName('container')[0];
 	container.addEventListener('click',function(ev){
 		if(ev.target.type=='button'){
