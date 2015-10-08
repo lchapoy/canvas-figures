@@ -1,0 +1,85 @@
+<!doctype>
+<html>
+	<head>
+		<title>Canvas Figures</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="bootstrap/bootstrap.min.js"></script>
+
+		<style>
+		.half{
+		 width:30%;
+		}
+		
+		.left{
+			float:left;
+			
+		}
+		.container input, .container button{
+			margin:2px;
+			
+		}
+		.words{
+			margin-left:90px;
+			margin-top:10px;
+			background-image:url('img/tile.jpg');
+			background-repeat:repeat
+
+		}
+		.container{
+			margin-left:88px;
+			border-radius:5px;
+			width:750px
+	
+		}
+		.text{
+			margin-top:5px;
+			border-radius:10px;
+			float:right;
+			font-weight: bold;
+		}
+		span{
+			color:white;
+		}
+		.noselect {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">Pattern Exercises</a>
+			</div>
+			<div>
+			  <ul class="nav navbar-nav">
+				<li ><a href="../SearchSystem/index.html">Search</a></li>
+				<li  class="active" ><a href="">Figures</a></li>
+				<li ><a href="../Divs/Divs2.html">Divs</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		<div class="container" style="background:black">
+		<button type="button" class="btn btn-primary left noselect">Square</button>
+		<button type="button" class="btn btn-danger left noselect">Circle</button>
+		<button type="button" class="btn btn-success left noselect">Triangle</button>
+		<input type="text" class='text noselect' value='200'></input><span class='text noselect'>Perimeter:</span>
+		</div>
+	
+		<canvas class="words noselect" id="canvas" width="750" height="1000" style="border:1px solid #ffffff;">
+		</canvas>
+
+		<script src="Javascript/model.js"></script>
+		<script src="Javascript/shape.js"></script>
+		<script src="Javascript/app.js"></script>
+	</body>
+</html>
