@@ -4,7 +4,7 @@ function Figure(){
 	this.model= new Model();
 	this.Shapes= new ShapeFactory(this.model);
 	var buttons=document.getElementsByTagName('button');
-	var lastButton;
+	var   lastButton;
 	for(var i=0;i<buttons.length;i++){
 		if(buttons[i].innerText==this.model.lastClicked.get()){
 			lastButton=buttons[i];
